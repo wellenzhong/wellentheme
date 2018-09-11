@@ -9,6 +9,7 @@ html,body {
         background-color: #fff;
     }    
     .menu-bar {
+        position: relative;
         width: @mainWidth;
         margin: 0 auto;
         height: 65px;
@@ -26,6 +27,18 @@ html,body {
                 margin-right: 10px;
                 color: #333;
                 padding: 0 10px;
+                transition: all 0.3s;
+                &:hover {
+                    background-color: #eee;
+                }
+                a {
+                    transition: all 0.3s;
+                    display: block;
+                    &:hover {
+                        color: #6bc0e0;
+                    }
+
+                }
             }
         }
     }
@@ -140,8 +153,8 @@ html,body {
                         white-space: nowrap;
                         a:hover{
                             color: #d9534f;
-                            padding-left: 5px;
-                            transition: all 0.5s ease 0s;
+                            padding-left: 2px;
+                            transition: all 0.2s;
                         }
                     }
                     p {
@@ -289,13 +302,16 @@ footer {
                 line-height: 22px;
                 color: #d9534f;
                 padding: 5px 15px;
+                transition: all 0.5s ease 0s;
+                border-radius: 4px;
                 &:hover {
                     background-color: #f9f9f9;
                 }
                 a {
-                    font-size: 12px;
+                    font-size: 14px;
                     color: #747f8c;
                     display: block;
+                    transition: all 0.5s ease 0s;
                     &:hover {
                         color: #d9534f;
                     }
@@ -350,5 +366,34 @@ footer {
                 }
             }
         }
+    }
+
+}
+.search {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    .input-wrap {
+        float: left;
+        input {
+            width: 220px;
+            height: 32px;
+            outline: none;
+            padding: 0 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px 0 0 20px;
+            border-right: none;
+            color: #333;
+        }
+    }
+    .search-btn {
+        float: left;
+        width: 40px;
+        border: 1px solid #6bc0e0;
+        height: 34px;
+        color: #fff;
+        border-radius: 0 20px 20px 0;
+        background: #6bc0e0 url(../../assets/images/search.png) center no-repeat;
+        background-size: 20px;
     }
 }

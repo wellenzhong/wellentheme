@@ -7,6 +7,7 @@ body {
   background-color: #fff;
 }
 .wrapper .menu-bar {
+  position: relative;
   width: 1180px;
   margin: 0 auto;
   height: 65px;
@@ -26,6 +27,19 @@ body {
   margin-right: 10px;
   color: #333;
   padding: 0 10px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.wrapper .menu-bar .menu ul li:hover {
+  background-color: #eee;
+}
+.wrapper .menu-bar .menu ul li a {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+}
+.wrapper .menu-bar .menu ul li a:hover {
+  color: #6bc0e0;
 }
 .wrapper .container {
   width: 1180px;
@@ -139,9 +153,9 @@ body {
 }
 .wrapper .container .post-list .article-box .article-summ .article-title a:hover {
   color: #d9534f;
-  padding-left: 5px;
-  -webkit-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
+  padding-left: 2px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 .wrapper .container .post-list .article-box .article-summ p {
   width: 100%;
@@ -280,14 +294,19 @@ footer .copyright {
   line-height: 22px;
   color: #d9534f;
   padding: 5px 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  border-radius: 4px;
 }
 .side .side-hotnews ol li:hover {
   background-color: #f9f9f9;
 }
 .side .side-hotnews ol li a {
-  font-size: 12px;
+  font-size: 14px;
   color: #747f8c;
   display: block;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 .side .side-hotnews ol li a:hover {
   color: #d9534f;
@@ -336,4 +355,32 @@ footer .copyright {
   color: #d9534f;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
+}
+.search {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.search .input-wrap {
+  float: left;
+}
+.search .input-wrap input {
+  width: 220px;
+  height: 32px;
+  outline: none;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  color: #333;
+}
+.search .search-btn {
+  float: left;
+  width: 40px;
+  border: 1px solid #6bc0e0;
+  height: 34px;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  background: #6bc0e0 url(../../assets/images/search.png) center no-repeat;
+  background-size: 20px;
 }
