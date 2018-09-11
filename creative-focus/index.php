@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
+<?php
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style/min/style.css">
-    <link rel="stylesheet" href="./style/min/reset.css">
-    <link rel="stylesheet" href="./javascript/swiper-3.4.2.min.css">
-    <title>Document</title>
-</head>
-
-<body>
-    <div id="homepage" class="wrapper">
-        <header class="header">
-            <div id="menu-bar" class="menu-bar">
-                <div class="logo"></div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#"> 首页</a></li>
-                        <li><a href="#"> 科技前沿</a></li>
-                        <li><a href="#"> 运营知识</a></li>
-                        <li><a href="#"> 职场攻略</a></li>
-                        <li><a href="#"> 数据报告</a></li>
-                    </ul>
-                </div>
-                <div class="search">
-                    <div class="input-wrap"><input type="text" placeholder="搜索全站"></div>
-                    <button type="button" class="search-btn"></button>
-                </div>
-            </div>
-        </header>
+get_header(); ?>
         <div class="container clearfix">
             <div class="main-left">
                 <div class="headline clearfix">
@@ -97,7 +67,7 @@
                 </div>
             </div>
             <div class="side">
-                <div class="side-box side-hotnews">
+                <!-- <div class="side-box side-hotnews">
                     <h3 class="module-title">热门文章排行</h3>
                     <ol>
                         <li><a href="#">教你打造一个网红店之用户篇网红店，用户运营</a></li>
@@ -172,7 +142,8 @@
                         </li>
                     </ul>
 
-                </div>
+                </div> -->
+                <?php get_sidebar(); ?>
             </div>
 
         </div>
@@ -188,35 +159,10 @@
                 <li><a href="#">百度</a> </li>
             </ul>
         </div>
-        <footer>
-            <div class="site-info clearfix">
-                <ul class="clearfix">
-                    <li>
-                        <h4>关于我们</h4>
-                        <div>
-                            <a href="#">关于我们</a>
-                            <a href="#">广告合作</a>
-                            <a href="#">友情链接</a>
-                            <a href="#">免责声明</a>
-                        </div>
-                    </li>
-                    <li>
-                        <h4>投稿建议</h4>
-
-                    </li>
-                    <li>
-                        <h4>联系我们</h4>
-                    </li>
-                    <li>
-                        <h4>关于</h4>
-                    </li>
-                </ul>
-            </div>
-            <div class="copyright">@2018 All Rights Reserved </div>
-        </footer>
+        <?php get_footer(); ?>
     </div>
-    <script src="./javascript/swiper-3.4.2.min.js"></script>
-    <script src="./javascript/theme.js"></script>
+    <script src="<?php bloginfo('template_url');?>/assets/js/swiper-3.4.2.min.js"></script>
+    <script src="<?php bloginfo('template_url');?>/assets/js/theme.js"></script>
 </body>
 
 </html>
