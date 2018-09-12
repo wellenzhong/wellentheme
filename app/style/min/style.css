@@ -90,7 +90,11 @@ body {
   font-size: 16px;
   color: #333;
   line-height: 32px;
+  height: 32px;
   font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .wrapper .container .headline-right .hotnews li p {
   font-size: 14px;
@@ -281,12 +285,12 @@ footer .copyright {
   background-color: #fff;
   padding-bottom: 15px;
 }
-.side .side-hotnews ol {
+.side .side-box ol {
   list-style: initial;
   margin-left: 30px;
   margin-right: 20px;
 }
-.side .side-hotnews ol li {
+.side .side-box ol li {
   list-style-type: decimal!important;
   text-align: -webkit-match-parent;
   list-style-position: outside;
@@ -298,17 +302,17 @@ footer .copyright {
   transition: all 0.5s ease 0s;
   border-radius: 4px;
 }
-.side .side-hotnews ol li:hover {
+.side .side-box ol li:hover {
   background-color: #f9f9f9;
 }
-.side .side-hotnews ol li a {
+.side .side-box ol li a {
   font-size: 14px;
   color: #747f8c;
   display: block;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
-.side .side-hotnews ol li a:hover {
+.side .side-box ol li a:hover {
   color: #d9534f;
 }
 .side .side-meta ul li {
@@ -356,6 +360,62 @@ footer .copyright {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
 }
+.side .widget-area ul {
+  list-style: initial;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.side .widget-area ul li {
+  text-align: -webkit-match-parent;
+  list-style: none;
+  font-size: 14px;
+  line-height: 22px;
+  color: #d9534f;
+  padding: 5px 15px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+  border-radius: 4px;
+}
+.side .widget-area ul li:hover {
+  background-color: #f9f9f9;
+}
+.side .widget-area ul li a {
+  font-size: 14px;
+  color: #747f8c;
+  display: block;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.side .widget-area ul li a:hover {
+  color: #d9534f;
+}
+.side .widget-area .widget_search {
+  overflow: hidden;
+  padding: 10px;
+}
+.side .widget-area .widget_search .screen-reader-text {
+  display: none;
+}
+.side .widget-area .widget_search .search-field {
+  float: left;
+  width: 220px;
+  height: 32px;
+  outline: none;
+  padding: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px 0 0 20px;
+  border-right: none;
+  color: #333;
+}
+.side .widget-area .widget_search .search-submit {
+  float: left;
+  width: 40px;
+  border: 1px solid #6bc0e0;
+  height: 32px;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  background: #6bc0e0;
+}
 .search {
   position: absolute;
   right: 10px;
@@ -383,4 +443,94 @@ footer .copyright {
   border-radius: 0 20px 20px 0;
   background: #6bc0e0 url(../../assets/images/search.png) center no-repeat;
   background-size: 20px;
+}
+.single-left {
+  width: 860px;
+  float: left;
+}
+.breadcrumb {
+  font-size: 14px;
+  background-color: #f3f5f7;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+}
+.breadcrumb a {
+  color: #5bc0de;
+}
+.breadcrumb a:hover {
+  color: #d9534f;
+}
+.post-wrap {
+  background-color: #fff;
+  overflow: hidden;
+}
+.post-wrap a {
+  color: #5bc0de;
+}
+.post-wrap .content-wrap {
+  padding: 20px 30px 30px;
+}
+.post-wrap .article-content {
+  font: 16px/30px "Microsoft Yahei";
+  line-height: 2em;
+  font-size: 16px;
+  word-break: break-all;
+  word-wrap: break-word;
+  margin: 50px 0 20px 0;
+  text-indent: 2em;
+  color: #333;
+  text-align: justify;
+}
+.post-wrap .article-content p {
+  margin-bottom: 30px;
+}
+.post-wrap .article-content a {
+  text-indent: 2em;
+}
+.post-wrap h1.post-title {
+  font-size: 24px;
+  color: #393939;
+  line-height: 32px;
+  border-left: 4px solid #d9534f;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-top: 15px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+.post-wrap .article-meta {
+  color: #999;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+.post-wrap .post-tag a {
+  color: #999;
+  margin: 0 6px 12px 6px;
+  background-clip: border-box;
+  background-color: #f3f3f3;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  line-height: 18px;
+  padding: 5px 12px;
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.post-wrap .post-tag a:hover {
+  color: #d9534f;
+}
+.post-wrap .tags-links {
+  margin-left: 30px;
+  line-height: 40px;
+}
+.post-wrap .nav-previous,
+.post-wrap .nav-next {
+  width: 50%;
+  float: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  height: 32px;
+  line-height: 32px;
 }
