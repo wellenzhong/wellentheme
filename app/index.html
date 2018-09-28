@@ -77,8 +77,25 @@
                         </ul>
                     </div>
                 </div>
+                <div class="submenu clearfix">
+                    <ul>
+                        <li class="current"><a title="wellentheme" href="http://www.wellentheme.com/wordpress/">主页</a></li>
+                        <li class="cat-item cat-item-9"><a href="http://www.wellentheme.com/wordpress/?cat=9">前端分享</a>
+                        </li>
+                        <li class="cat-item cat-item-10"><a href="http://www.wellentheme.com/wordpress/?cat=10">后端分享</a>
+                        </li>
+                        <li class="cat-item cat-item-1"><a href="http://www.wellentheme.com/wordpress/?cat=1">默认分类</a>
+                        </li>
+                        <li class="page_item page-item-2"><a href="http://www.wellentheme.com/wordpress/?page_id=2">Sample
+                                Page</a></li>
+                    </ul>
+                </div>
                 <div class="post-list clearfix">
                     <h3 class="module-title">最新文章</h3>
+                    <section class="content content-empty">
+                        <p>目前还没有文章！</p>
+                        <p><a href="http://www.wellentheme.com/wordpress/wp-admin/post-new.php">点击这里发布您的第一篇文章</a></p>
+                    </section>
                     <div class="article-box clearfix">
                         <div class="thumbnail">
                             <img src="./assets/images/5b95d6824474f.jpg" alt="缩略图">
@@ -88,7 +105,13 @@
                             </div>
                             <p>近期，不少消费金融公司纷纷披露2018年上半年财报。从财报表现来看，比起2017年上半年，部分消费金融公司今年上半年业绩增幅明显，多家公司盈利。其中二三四五净利润为6.14亿元、招联消费金融净利润为6.04亿元、马上消费金融净利润为3.66亿元、海尔消费金融净利润为6091万元，同比增幅分别为35.5%、11.6%、173.13%、238%</p>
                             <div class="post-info">
-                                <span class="cate-lbl">最新发布</span>
+                                <div class="cate-lbl">
+                                    <ul class="post-categories">
+                                        <li><a href="http://www.wellentheme.com/wordpress/?cat=9" rel="category">前端分享</a></li>
+                                        <li><a href="http://www.wellentheme.com/wordpress/?cat=10" rel="category">后端分享</a></li>
+                                        <li><a href="http://www.wellentheme.com/wordpress/?cat=1" rel="category">默认分类</a></li>
+                                    </ul>
+                                </div>
                                 <span class="post-date">发布于 2018-09-10</span>
                             </div>
                         </div>
@@ -106,6 +129,34 @@
                             </div>
                         </div>
                     </div>
+                    <article id="post-24" class="article-box clearfix" itemscope="" itemtype="http://schema.org/BlogPosting">
+                        <div class="thumbnail"><a href="http://www.wellentheme.com/wordpress/2018/09/14/%e7%ac%ac%e4%ba%8c%e7%af%87%e6%96%87%e7%ab%a0/"
+                                rel="bookmark" title="第二篇文章">
+                                <img class="home-thumb" src="http://www.wellentheme.com/wordpress/wp-content/uploads/2018/09/WX20180524-125027@2x-184x300.png"
+                                    alt="第二篇文章">
+                            </a>
+                        </div>
+                        <div class="article-summ clearfix">
+
+                            <header class="entry-header">
+                                <h2 class="article-title" itemprop="name headline"><a href="http://www.wellentheme.com/wordpress/2018/09/14/%e7%ac%ac%e4%ba%8c%e7%af%87%e6%96%87%e7%ab%a0/"
+                                        rel="bookmark">第二篇文章</a></h2>
+                            </header><!-- .entry-header -->
+                            <p>
+
+                                摘要是可选的手工创建的内容总结，并可在您的主题中使用摘要是可选的手工创建的内容总结，并可在您的主题中使用摘要是可选的手工创建的内容总结，并可在您的主题中使用摘要是可选的手工创建的内容总结，并可在您...</p>
+                            <p>
+                            </p>
+                            <div class="post-info">
+                                <span class="cate-lbl">
+                                    <ul class="post-categories">
+                                        <li><a href="http://www.wellentheme.com/wordpress/category/uncategorized/" rel="category tag">Uncategorized</a></li>
+                                    </ul>
+                                </span>
+                                <span class="post-date">发表于 2018-9-14</span>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
             <div class="side widget-area">
@@ -126,18 +177,12 @@
                 </div>
                 <div class="side-box side-meta clearfix">
                     <h3 class="module-title">热门话题</h3>
-                    <ul>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">javascript</a></li>
-                        <li><a href="#">hello</a></li>
-                        <li><a href="#">html</a></li>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">互联网</a></li>
-                        <li><a href="#">互联网</a></li>
-                    </ul>
+                    <div>
+                        <a href="#">互联网</a>
+                        <a href="#">javascript</a>
+                        <a href="#">hello</a>
+                        <a href="#">html</a>
+                    </div>
                 </div>
                 <div id="secondary" class="widget-area" role="complementary">
                     <aside id="search-2" class="side-box widget_search">
@@ -148,6 +193,77 @@
                             </label>
                             <input type="submit" class="search-submit" value="搜索">
                         </form>
+                    </aside>
+                    <aside id="calendar-2" class="side-box widget_calendar">
+                        <h3 class="module-title">日历</h3>
+                        <div id="calendar_wrap" class="calendar_wrap">
+                            <table id="wp-calendar">
+                                <caption>2018年九月</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" title="星期一">一</th>
+                                        <th scope="col" title="星期二">二</th>
+                                        <th scope="col" title="星期三">三</th>
+                                        <th scope="col" title="星期四">四</th>
+                                        <th scope="col" title="星期五">五</th>
+                                        <th scope="col" title="星期六">六</th>
+                                        <th scope="col" title="星期日">日</th>
+                                    </tr>
+                                </thead>
+
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="3" id="prev" class="pad">&nbsp;</td>
+                                        <td class="pad">&nbsp;</td>
+                                        <td colspan="3" id="next" class="pad">&nbsp;</td>
+                                    </tr>
+                                </tfoot>
+
+                                <tbody>
+                                    <tr>
+                                        <td colspan="5" class="pad">&nbsp;</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="http://www.wellentheme.com/wordpress/2018/09/10/" aria-label="于2018年9月10日上发布的文章">10</a></td>
+                                        <td><a href="http://www.wellentheme.com/wordpress/2018/09/11/" aria-label="于2018年9月11日上发布的文章">11</a></td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td><a href="http://www.wellentheme.com/wordpress/2018/09/14/" aria-label="于2018年9月14日上发布的文章">14</a></td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td id="today">18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </aside>
                     <aside id="recent-posts-2" class="side-box widget_recent_entries">
                         <h3 class="module-title">近期文章</h3>
@@ -247,9 +363,9 @@
                 <li><a href="#">百度</a> </li>
             </ul>
         </div>
-        <footer>
+        <footer class="page-footer">
             <div class="site-info clearfix">
-                <ul class="clearfix">
+                <!-- <ul class="clearfix">
                     <li>
                         <h4>关于我们</h4>
                         <div>
@@ -269,9 +385,32 @@
                     <li>
                         <h4>关于</h4>
                     </li>
-                </ul>
+                </ul> -->
+                <div id="third" class="widget-area clearfix" role="complementary">
+                    <aside id="custom_html-2" class="widget_text widget widget_custom_html">
+                        <h3 class="module-title">
+                            <p><i class="icon-st"></i></p>关于我们
+                        </h3>
+                        <div class="textwidget custom-html-widget">关于我们 &nbsp;关于你们</div>
+                        <div class="clear"></div>
+                    </aside>
+                    <aside id="custom_html-3" class="widget_text widget widget_custom_html">
+                        <h3 class="module-title">
+                            <p><i class="icon-st"></i></p>站点声明
+                        </h3>
+                        <div class="textwidget custom-html-widget">各种声明</div>
+                        <div class="clear"></div>
+                    </aside>
+                    <aside id="custom_html-4" class="widget_text widget widget_custom_html">
+                        <h3 class="module-title">
+                            <p><i class="icon-st"></i></p>站点地图
+                        </h3>
+                        <div class="textwidget custom-html-widget">hello map</div>
+                        <div class="clear"></div>
+                    </aside>
+                </div><!-- #secondary -->
             </div>
-            <div class="copyright">@2018 All Rights Reserved </div>
+            <div class="copyright">@2018 All Rights Reserved. wellentheme </div>
         </footer>
     </div>
     <script src="./javascript/swiper-3.4.2.min.js"></script>
