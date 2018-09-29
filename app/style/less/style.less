@@ -59,7 +59,7 @@ html,body {
         }
         .headline-left {
             width: 50%;
-            height: 425px;
+            height: 300px;
             float: left;
             background-color: #ddd;
             .swiper-container  {
@@ -69,6 +69,8 @@ html,body {
                     a {
                         display: block;
                         position: relative;
+                        width: 100%;
+                        height: 100%;
                         img {
                             width: 100%;
                             height: 100%;
@@ -102,7 +104,7 @@ html,body {
         }
         .headline-right {
             width: 400px;
-            height: 425px;
+            height: 300px;
             float: left;
             margin-left: 30px;
             background-color: #fff;
@@ -120,7 +122,7 @@ html,body {
             .hotnews {
                 li {
                     transition:all 0.3s;
-                    padding: 15px;
+                    padding: 5px 15px;
                     border-bottom: 1px solid #eee;
                     &:hover {
                         background-color: #f5f7f9;
@@ -135,8 +137,8 @@ html,body {
                     h4 {
                         font-size: 16px;
                         color: #333;
-                        line-height: 32px;
-                        height: 32px;
+                        line-height: 30px;
+                        height: 30px;
                         font-weight: 600;
                         overflow: hidden;
                         text-overflow: ellipsis;
@@ -147,11 +149,11 @@ html,body {
                         color: #999;
                         line-height: 20px;
                         width: 100%;
-                        height:62px;
+                        height:40px;
                         overflow: hidden;
                         overflow: hidden;
                         display: -webkit-box;
-                        -webkit-line-clamp: 3;
+                        -webkit-line-clamp: 2;
                         -webkit-box-orient: vertical;
                         word-break: break-all;
 
@@ -417,7 +419,7 @@ footer.page-footer {
             display: inline-block;
             border: 1px solid #a5c1e4;
             color: #a5c1e4;
-            font-size: 12px;
+            font-size: 12px!important;
             margin: 5px;
             padding-left: 10px;
             &:hover {
@@ -904,4 +906,23 @@ h1.page-title {
             padding: 5px 15px;
         }
     }
+}
+#pagenavi {
+    display: block;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px 0;
+.page-numbers {
+    margin: 0 2px;
+    padding: 8px 12px;
+    background-color: #ddd;
+    color: #666;
+    border-radius: 2px;
+    opacity: .88;
+    font-size: 12px;
+}
+.current {
+    background-color: #d9534f;
+    color: #fff;
+}
 }

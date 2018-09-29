@@ -1,0 +1,47 @@
+/*
+Media Queries Version: 1.0
+*/
+
+/** 等于或大于900px **/
+@media screen and (min-width: 900px) {
+
+}
+/** 等于或小于1080px **/
+@media screen and (max-width: 1080px) {
+
+}
+/** 等于或小于1024px **/
+@media screen and (max-width: 1024px) {
+
+}
+/** 等于或小于1005px **/
+@media screen and (max-width: 1005px) {
+
+}
+/** 等于或小于900px **/
+@media screen and (max-width: 900px) {
+
+}
+
+/** 等于或小于650px **/
+@media screen and (max-width: 650px) {
+
+}
+/** 等于或大于550px **/
+@media screen and (min-width: 550px) {
+
+}
+/** 等于或小于550px **/
+@media screen and (max-width: 550px) {
+
+}
+/** 等于或小于480px **/
+@media screen and (max-width: 480px) {
+
+}
+/*
+Retina Ready
+*/
+@media all and (-webkit-min-device-pixel-ratio: 1.5) {
+
+}
