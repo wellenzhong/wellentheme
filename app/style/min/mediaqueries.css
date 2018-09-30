@@ -20,7 +20,127 @@ Media Queries Version: 1.0
 }
 /** 等于或小于900px **/
 @media screen and (max-width: 900px) {
+	.wrapper .container,.links,.wrapper .container  .main-left{
+		width: 100%;
+		margin-top: initial;
+	}
+	.wrapper .container .post-list .article-box {
+		display: flex;
+	}
+	.wrapper .container .post-list .article-box .article-summ {
+		width: 100%;
+		height: auto;
+		flex: 1 1 auto;
+		padding: 0;
+	}
+	.wrapper .container .post-list .article-box .thumbnail {
+		flex: none;
+		width: 120px;
+		height: 80px;
+	}
+	.wrapper .container .post-list .article-box .article-summ p {
+		display: none;
+	}
+	.wrapper .menu-bar {
+		width: 100%;
+		height: 45px;
+	}
+	.wrapper .menu-bar .menu,.wrapper .menu-bar .search,.widget-area,.side {
+		display: none;
+	}
+	.wrapper .menu-bar .logo {
+		margin: 0 auto;
+		float: none;
+		height: 100%;
+		text-align: center;
+	}
+	.wrapper .menu-bar .logo img {
+		width: auto;
+	}
+	.submenu {
+		display: none;
+	}
+	.wrapper .container .headline-right {
+		width: 100%;
+		margin-left: initial;
+		height: auto;
+	}
+	.wrapper .container .headline {
+		width: 100%;
+		margin-top: initial;
+	}
+	.wrapper .container .headline-left {
+		width: 100%;
+		height: 230px;
+	}
+	.wrapper .container .headline-right .title {
+		font-size: 16px;
+		text-align: center;
+		width: 90px;
+	}
+	.wrapper .container .headline-right .hotnews li h4 {
+		font-size: 15px;
+	}
+	.wrapper .container .headline-right .hotnews li p {
+		font-size: 13px;
+	}
+	.wrapper .container .post-list .article-box .article-summ .post-info {
+		position: static;
+		margin-top: 10px;
 
+	}
+	.wrapper .container .post-list .article-box .article-summ .article-title {
+		font-size: 14px;
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 2;
+		-webkit-box-orient: vertical;
+		word-break: break-all;
+		line-height: 20px;
+		height: 40px;
+		white-space: initial;
+
+	}
+	.wrapper .container .post-list .article-box {
+		padding-bottom: 10px;
+	}
+	.wrapper .container .headline-right .hotnews li {
+		padding: 15px;
+	}
+	.links {
+		padding: 10px 20px;
+	}
+	.links ul li {
+		margin-bottom: 5px;
+	}
+	.single-left {
+		width: 100%;
+	}
+	.comments-area {
+		padding: 0 20px;
+	}
+	.comments-area .comment-respond,
+	.post-wrap .post-navigation
+	{
+		padding: 0;
+	}
+	.comments-area .comment-form-author, .comments-area .comment-form-url, .comments-area .comment-form-email {
+		width: 100%;
+	}
+	.post-wrap .nav-previous, .post-wrap .nav-next {
+		width: 100%;
+	}
+	footer.page-footer {
+		height: auto;
+	}
+	footer.page-footer .site-info {
+		width: initial;
+		height: initial;
+	}
+	footer.page-footer .site-info aside {
+		width: 100%;
+		border-right: none;
+	}
 }
 
 /** 等于或小于650px **/

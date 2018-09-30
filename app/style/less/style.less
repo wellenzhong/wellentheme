@@ -8,7 +8,59 @@ html,body {
 .wrapper {
     .header {
         background-color: #fff;
+        position: relative;
+        .mobile-menu {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 6px;
+            left: 10px;
+            background: url(./images/menu.png) center no-repeat;
+            background-size: contain;
+        }
     }    
+    .mobile-screen {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        z-index: 99;
+        color: #fff;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        .top-ctrl {
+            height: 45px;
+            line-height: 45px;
+            background-color: #222;
+            overflow: hidden;
+            span.mobile-back {
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: url(./images/close.png) center no-repeat;
+                background-size: contain;
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+        }
+        ul li {
+            padding: 5px 20px 5px 50px;
+        }
+        a {
+            color: inherit;
+            display: block;
+            line-height: 40px;
+            font-size: 14px;
+        }
+    }
+    .screen-active {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
     .menu-bar {
         position: relative;
         width: @mainWidth;
@@ -347,6 +399,10 @@ footer.page-footer {
         #third {
             display: table;
             margin: 0 auto;
+            .textwidget {
+
+                font-size: 14px;
+            }
         }
         aside {
             width: 295px;
@@ -409,9 +465,7 @@ footer.page-footer {
                 }
             }
         }
-        .textwidget {
-            padding: 0 20px;
-        }
+        
     }
     .side-meta,.tagcloud {
         a {
